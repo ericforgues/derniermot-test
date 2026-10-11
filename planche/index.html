@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Planche du Dernier Mot</title>
+<style>
+  :root { color-scheme: dark; }
+  body {
+    margin: 0; padding: 24px 28px 64px;
+    background: #16161a; color: #e8e8ea;
+    font: 15px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  header { position: sticky; top: 0; z-index: 2; margin: -24px -28px 24px;
+    padding: 16px 28px; background: #16161aee; backdrop-filter: blur(8px);
+    border-bottom: 1px solid #2c2c33; }
+  h1 { margin: 0; font-size: 18px; font-weight: 650; }
+  header p { margin: 4px 0 0; color: #9a9aa4; font-size: 13px; }
+  .grille { display: grid; gap: 26px 20px;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
+  .vue { margin: 0; }
+  .vue img { display: block; width: 100%; height: auto; border-radius: 12px;
+    border: 1px solid #2c2c33; background: #fff; }
+  figcaption { display: grid; grid-template-columns: auto 1fr; gap: 2px 8px;
+    margin-top: 10px; align-items: baseline; }
+  .numero { grid-row: span 2; font-size: 22px; font-weight: 700; color: #6f6f7b;
+    font-variant-numeric: tabular-nums; }
+  .ecran { font-weight: 650; }
+  .montre { grid-column: 2; color: #9a9aa4; font-size: 13px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Le Dernier Mot, planche des écrans</h1>
+  <p>27 captures, parties réelles, 390 px. Un clic ouvre l'image pleine taille. Commente par numéro.</p>
+</header>
+<div class="grille">
+    <figure class="vue" id="v01">
+      <a href="01-accueil-vide.png" target="_blank" rel="noopener">
+        <img src="01-accueil-vide.png" alt="la porte d'entrée, sans rien de saisi" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">01</span>
+        <span class="ecran">Accueil</span>
+        <span class="montre">la porte d'entrée, sans rien de saisi</span>
+      </figcaption>
+    </figure>
+    <figure class="vue" id="v02">
+      <a href="02-accueil-rempli.png" target="_blank" rel="noopener">
+        <img src="02-accueil-rempli.png" alt="un pseudo et un code saisis" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">02</span>
+        <span class="ecran">Accueil</span>
+        <span class="montre">un pseudo et un code saisis</span>
+      </figcaption>
+    </figure>
+    <figure class="vue" id="v03">
+      <a href="03-accueil-erreur.png" target="_blank" rel="noopener">
+        <img src="03-accueil-erreur.png" alt="le refus d'un code qui n'existe pas" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">03</span>
+        <span class="ecran">Accueil</span>
+        <span class="montre">le refus d'un code qui n'existe pas</span>
+      </figcaption>
+    </figure>
+    <figure class="vue" id="v04">
+      <a href="04-salon-seul.png" target="_blank" rel="noopener">
+        <img src="04-salon-seul.png" alt="le code à dicter, et personne encore" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">04</span>
+        <span class="ecran">Salon</span>
+        <span class="montre">le code à dicter, et personne encore</span>
+      </figcaption>
+    </figure>
+    <figure class="vue" id="v05">
+      <a href="05-salon-avec-bots.png" target="_blank" rel="noopener">
+        <img src="05-salon-avec-bots.png" alt="quatre joueurs, trois bots, places restantes" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">05</span>
+        <span class="ecran">Salon</span>
+        <span class="montre">quatre joueurs, trois bots, places restantes</span>
+      </figcaption>
+    </figure>
+    <figure class="vue" id="v06">
+      <a href="06-salon-depart.png" target="_blank" rel="noopener">
+        <img src="06-salon-depart.png" alt="tout le monde est prêt: la question du départ" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">06</span>
+        <span class="ecran">Salon</span>
+        <span class="montre">tout le monde est prêt: la question du départ</span>
+      </figcaption>
+    </figure>
+    <figure class="vue" id="v07">
+      <a href="07-annonce.png" target="_blank" rel="noopener">
+        <img src="07-annonce.png" alt="les règles du tour, avant que la manche parte" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">07</span>
+        <span class="ecran">Annonce</span>
+        <span class="montre">les règles du tour, avant que la manche parte</span>
+      </figcaption>
+    </figure>
+    <figure class="vue" id="v08">
+      <a href="08-manche-depart.png" target="_blank" rel="noopener">
+        <img src="08-manche-depart.png" alt="la grille vide, la jauge pleine" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">08</span>
+        <span class="ecran">Manche</span>
+        <span class="montre">la grille vide, la jauge pleine</span>
+      </figcaption>
+    </figure>
+    <figure class="vue" id="v09">
+      <a href="09-manche-saisie.png" target="_blank" rel="noopener">
+        <img src="09-manche-saisie.png" alt="deux lettres posées, la case active devant" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">09</span>
+        <span class="ecran">Manche</span>
+        <span class="montre">deux lettres posées, la case active devant</span>
+      </figcaption>
+    </figure>
+    <figure class="vue" id="v10">
+      <a href="10-manche-un-essai.png" target="_blank" rel="noopener">
+        <img src="10-manche-un-essai.png" alt="un essai jugé, le clavier qui en garde la trace" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">10</span>
+        <span class="ecran">Manche</span>
+        <span class="montre">un essai jugé, le clavier qui en garde la trace</span>
+      </figcaption>
+    </figure>
+    <figure class="vue" id="v11">
+      <a href="11-manche-plusieurs-essais.png" target="_blank" rel="noopener">
+        <img src="11-manche-plusieurs-essais.png" alt="quatre essais, l'avance qui se construit" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">11</span>
+        <span class="ecran">Manche</span>
+        <span class="montre">quatre essais, l'avance qui se construit</span>
+      </figcaption>
+    </figure>
+    <figure class="vue" id="v12">
+      <a href="12-manche-grille-pleine.png" target="_blank" rel="noopener">
+        <img src="12-manche-grille-pleine.png" alt="la grille qui déborde et doit défiler" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">12</span>
+        <span class="ecran">Manche</span>
+        <span class="montre">la grille qui déborde et doit défiler</span>
+      </figcaption>
+    </figure>
+    <figure class="vue" id="v13">
+      <a href="13-items-en-main.png" target="_blank" rel="noopener">
+        <img src="13-items-en-main.png" alt="trois emplacements occupés, prêts à partir" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">13</span>
+        <span class="ecran">Manche</span>
+        <span class="montre">trois emplacements occupés, prêts à partir</span>
+      </figcaption>
+    </figure>
+    <figure class="vue" id="v14">
+      <a href="14-item-arme.png" target="_blank" rel="noopener">
+        <img src="14-item-arme.png" alt="un malus choisi: les cibles s'offrent dans le bandeau" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">14</span>
+        <span class="ecran">Manche</span>
+        <span class="montre">un malus choisi: les cibles s'offrent dans le bandeau</span>
+      </figcaption>
+    </figure>
+    <figure class="vue" id="v15">
+      <a href="15-effet-gel.png" target="_blank" rel="noopener">
+        <img src="15-effet-gel.png" alt="le clavier gelé: plus une touche ne répond" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">15</span>
+        <span class="ecran">Manche</span>
+        <span class="montre">le clavier gelé: plus une touche ne répond</span>
+      </figcaption>
+    </figure>
+    <figure class="vue" id="v16">
+      <a href="16-effet-brouillard.png" target="_blank" rel="noopener">
+        <img src="16-effet-brouillard.png" alt="les essais passés voilés" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">16</span>
+        <span class="ecran">Manche</span>
+        <span class="montre">les essais passés voilés</span>
+      </figcaption>
+    </figure>
+    <figure class="vue" id="v17">
+      <a href="17-effet-encre.png" target="_blank" rel="noopener">
+        <img src="17-effet-encre.png" alt="les taches d'encre posées sur la grille" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">17</span>
+        <span class="ecran">Manche</span>
+        <span class="montre">les taches d'encre posées sur la grille</span>
+      </figcaption>
+    </figure>
+    <figure class="vue" id="v18">
+      <a href="18-effet-coup.png" target="_blank" rel="noopener">
+        <img src="18-effet-coup.png" alt="un coup encaissé: la jauge qui saute" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">18</span>
+        <span class="ecran">Manche</span>
+        <span class="montre">un coup encaissé: la jauge qui saute</span>
+      </figcaption>
+    </figure>
+    <figure class="vue" id="v19">
+      <a href="19-jauge-danger.png" target="_blank" rel="noopener">
+        <img src="19-jauge-danger.png" alt="sous le seuil: ce que l'écran fait pour le dire" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">19</span>
+        <span class="ecran">Manche</span>
+        <span class="montre">sous le seuil: ce que l'écran fait pour le dire</span>
+      </figcaption>
+    </figure>
+    <figure class="vue" id="v20">
+      <a href="20-aide-silencieuse.png" target="_blank" rel="noopener">
+        <img src="20-aide-silencieuse.png" alt="l'aide tombée sans un mot: des lettres que le joueur n'a jamais jouées" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">20</span>
+        <span class="ecran">Manche</span>
+        <span class="montre">l'aide tombée sans un mot: des lettres que le joueur n'a jamais jouées</span>
+      </figcaption>
+    </figure>
+    <figure class="vue" id="v21">
+      <a href="21-trouve.png" target="_blank" rel="noopener">
+        <img src="21-trouve.png" alt="le mot trouvé, le score, et la place" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">21</span>
+        <span class="ecran">Dénouement</span>
+        <span class="montre">le mot trouvé, le score, et la place</span>
+      </figcaption>
+    </figure>
+    <figure class="vue" id="v22">
+      <a href="22-spectateur-ensemble.png" target="_blank" rel="noopener">
+        <img src="22-spectateur-ensemble.png" alt="la table entière pendant que les autres cherchent" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">22</span>
+        <span class="ecran">Spectateur</span>
+        <span class="montre">la table entière pendant que les autres cherchent</span>
+      </figcaption>
+    </figure>
+    <figure class="vue" id="v23">
+      <a href="23-spectateur-deploye.png" target="_blank" rel="noopener">
+        <img src="23-spectateur-deploye.png" alt="une grille en grand, les voisins qui dépassent" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">23</span>
+        <span class="ecran">Spectateur</span>
+        <span class="montre">une grille en grand, les voisins qui dépassent</span>
+      </figcaption>
+    </figure>
+    <figure class="vue" id="v24">
+      <a href="24-spectateur-voisin.png" target="_blank" rel="noopener">
+        <img src="24-spectateur-voisin.png" alt="le joueur suivant, amené au centre" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">24</span>
+        <span class="ecran">Spectateur</span>
+        <span class="montre">le joueur suivant, amené au centre</span>
+      </figcaption>
+    </figure>
+    <figure class="vue" id="v25">
+      <a href="25-spectateur-fin.png" target="_blank" rel="noopener">
+        <img src="25-spectateur-fin.png" alt="la manche finie: le verdict, et quand repart la suivante" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">25</span>
+        <span class="ecran">Spectateur</span>
+        <span class="montre">la manche finie: le verdict, et quand repart la suivante</span>
+      </figcaption>
+    </figure>
+    <figure class="vue" id="v26">
+      <a href="26-a-zero.png" target="_blank" rel="noopener">
+        <img src="26-a-zero.png" alt="la jauge à zéro: le dénouement, ou la fin de partie quand toute la table tombe" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">26</span>
+        <span class="ecran">Dénouement</span>
+        <span class="montre">la jauge à zéro: le dénouement, ou la fin de partie quand toute la table tombe</span>
+      </figcaption>
+    </figure>
+    <figure class="vue" id="v27">
+      <a href="27-fin-de-partie.png" target="_blank" rel="noopener">
+        <img src="27-fin-de-partie.png" alt="le dernier survivant, le mot, et la suite" loading="lazy" />
+      </a>
+      <figcaption>
+        <span class="numero">27</span>
+        <span class="ecran">Fin de partie</span>
+        <span class="montre">le dernier survivant, le mot, et la suite</span>
+      </figcaption>
+    </figure>
+</div>
+</body>
+</html>

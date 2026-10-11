@@ -1,0 +1,139 @@
+{
+  "planche": [
+    {
+      "fichier": "01-accueil-vide.png",
+      "ecran": "Accueil",
+      "montre": "la porte d'entrée, sans rien de saisi"
+    },
+    {
+      "fichier": "02-accueil-rempli.png",
+      "ecran": "Accueil",
+      "montre": "un pseudo et un code saisis"
+    },
+    {
+      "fichier": "03-accueil-erreur.png",
+      "ecran": "Accueil",
+      "montre": "le refus d'un code qui n'existe pas"
+    },
+    {
+      "fichier": "04-salon-seul.png",
+      "ecran": "Salon",
+      "montre": "le code à dicter, et personne encore"
+    },
+    {
+      "fichier": "05-salon-avec-bots.png",
+      "ecran": "Salon",
+      "montre": "quatre joueurs, trois bots, places restantes"
+    },
+    {
+      "fichier": "06-salon-depart.png",
+      "ecran": "Salon",
+      "montre": "tout le monde est prêt: la question du départ"
+    },
+    {
+      "fichier": "07-annonce.png",
+      "ecran": "Annonce",
+      "montre": "les règles du tour, avant que la manche parte"
+    },
+    {
+      "fichier": "08-manche-depart.png",
+      "ecran": "Manche",
+      "montre": "la grille vide, la jauge pleine"
+    },
+    {
+      "fichier": "09-manche-saisie.png",
+      "ecran": "Manche",
+      "montre": "deux lettres posées, la case active devant"
+    },
+    {
+      "fichier": "10-manche-un-essai.png",
+      "ecran": "Manche",
+      "montre": "un essai jugé, le clavier qui en garde la trace"
+    },
+    {
+      "fichier": "11-manche-plusieurs-essais.png",
+      "ecran": "Manche",
+      "montre": "quatre essais, l'avance qui se construit"
+    },
+    {
+      "fichier": "12-manche-grille-pleine.png",
+      "ecran": "Manche",
+      "montre": "la grille qui déborde et doit défiler"
+    },
+    {
+      "fichier": "13-items-en-main.png",
+      "ecran": "Manche",
+      "montre": "trois emplacements occupés, prêts à partir"
+    },
+    {
+      "fichier": "14-item-arme.png",
+      "ecran": "Manche",
+      "montre": "un malus choisi: les cibles s'offrent dans le bandeau"
+    },
+    {
+      "fichier": "15-effet-gel.png",
+      "ecran": "Manche",
+      "montre": "le clavier gelé: plus une touche ne répond"
+    },
+    {
+      "fichier": "16-effet-brouillard.png",
+      "ecran": "Manche",
+      "montre": "les essais passés voilés"
+    },
+    {
+      "fichier": "17-effet-encre.png",
+      "ecran": "Manche",
+      "montre": "les taches d'encre posées sur la grille"
+    },
+    {
+      "fichier": "18-effet-coup.png",
+      "ecran": "Manche",
+      "montre": "un coup encaissé: la jauge qui saute"
+    },
+    {
+      "fichier": "19-jauge-danger.png",
+      "ecran": "Manche",
+      "montre": "sous le seuil: ce que l'écran fait pour le dire"
+    },
+    {
+      "fichier": "20-aide-silencieuse.png",
+      "ecran": "Manche",
+      "montre": "l'aide tombée sans un mot: des lettres que le joueur n'a jamais jouées"
+    },
+    {
+      "fichier": "21-trouve.png",
+      "ecran": "Dénouement",
+      "montre": "le mot trouvé, le score, et la place"
+    },
+    {
+      "fichier": "22-spectateur-ensemble.png",
+      "ecran": "Spectateur",
+      "montre": "la table entière pendant que les autres cherchent"
+    },
+    {
+      "fichier": "23-spectateur-deploye.png",
+      "ecran": "Spectateur",
+      "montre": "une grille en grand, les voisins qui dépassent"
+    },
+    {
+      "fichier": "24-spectateur-voisin.png",
+      "ecran": "Spectateur",
+      "montre": "le joueur suivant, amené au centre"
+    },
+    {
+      "fichier": "25-spectateur-fin.png",
+      "ecran": "Spectateur",
+      "montre": "la manche finie: le verdict, et quand repart la suivante"
+    },
+    {
+      "fichier": "26-a-zero.png",
+      "ecran": "Dénouement",
+      "montre": "la jauge à zéro: le dénouement, ou la fin de partie quand toute la table tombe"
+    },
+    {
+      "fichier": "27-fin-de-partie.png",
+      "ecran": "Fin de partie",
+      "montre": "le dernier survivant, le mot, et la suite"
+    }
+  ]
+}

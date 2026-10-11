@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Le Dernier Mot</title>
+    <!-- Installation sur l'écran d'accueil. Les chemins sont relatifs: le jeu est servi sous un
+         sous-dossier en test et à la racine en local, et le manifeste doit suivre les deux. -->
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="theme-color" content="#FFF3EA" />
+    <!-- iOS ne lit pas encore tout le manifeste: son icône et son mode plein écran se déclarent à
+         part, et son icône d'accueil n'accepte pas la transparence. -->
+    <link rel="apple-touch-icon" href="icone-ios-180.cd62a729.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Dernier Mot" />
+    <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
+    <style id="expo-reset">
+      /* These styles make the body full-height */
+      html,
+      body {
+        height: 100%;
+      }
+      /* Le fond du jeu appartient à la page, pas seulement à ce que React dessine dedans. Sans
+         lui, le blanc du navigateur reste visible partout où la racine ne peint pas: sur iOS, la
+         bande de la barre d'état d'une application installée, et le rebond d'un défilement. */
+      html,
+      body {
+        background-color: #FFF3EA;
+      }
+      /* These styles disable body scrolling if you are using <ScrollView> */
+      body {
+        overflow: hidden;
+      }
+      /* These styles make the root element full-height */
+      #root {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
+    </style>
+  <link rel="icon" href="/derniermot-test/favicon.ico"/></head>
+
+  <body>
+    <noscript>
+      Ce jeu a besoin de JavaScript. Active-le dans ton navigateur, puis recharge la page.
+    </noscript>
+    <!-- The root element for your Expo app. -->
+    <div id="root"></div>
+    <script>
+      // Le service worker ne sert qu'à rendre le jeu installable: voir `sw.js`, il ne cache rien.
+      // Un enregistrement qui échoue (navigateur sans service worker, page non sécurisée) ne doit
+      // rien casser: le jeu se joue pareil dans l'onglet.
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register('sw.js').catch(function () {});
+        });
+      }
+    </script>
+  <script src="/derniermot-test/_expo/static/js/web/index-a8121a94286324d7d69f8927eeefdd5a.js" defer></script>
+</body>
+</html>
